@@ -39,8 +39,8 @@ flixel-addons
 flixel-ui
 hscript
 newgrounds
-```
-So for each of those type `haxelib install [library]` so shit like `haxelib install newgrounds`
+linc_luajit
+So for each of those type `haxelib install [library]` so shit like 'haxelib install newgrounds and linc_luajit'
 
 You'll also need to install a couple things that involve Gits. To do this, you need to do a few things first.
 1. Download [git-scm](https://git-scm.com/downloads). Works for Windows, Mac, and Linux, just select your build.
@@ -78,22 +78,16 @@ and you should be good to go there.
 Once you have all those installed, it's pretty easy to compile the game. You just need to run 'lime test html5 -debug' in the root of the project to build and run the HTML5 version. (command prompt navigation guide can be found here: [https://ninjamuffin99.newgrounds.com/news/post/1090480](https://ninjamuffin99.newgrounds.com/news/post/1090480))
 
 To run it from your desktop (Windows, Mac, Linux) it can be a bit more involved. For Linux, you only need to open a terminal in the project directory and run 'lime test linux -debug' and then run the executable file in export/release/linux/bin. For Windows, you need to install Visual Studio Community 2019. While installing VSC, don't click on any of the options to install workloads. Instead, go to the individual components tab and choose the following:
-* MSVC v142 - VS 2019 C++ x64/x86 build tools
-* Windows SDK (10.0.17763.0)
-* C++ Profiling tools
-* C++ CMake tools for windows
-* C++ ATL for v142 build tools (x86 & x64)
-* C++ MFC for v142 build tools (x86 & x64)
-* C++/CLI support for v142 build tools (14.21)
-* C++ Modules for v142 build tools (x64/x86)
-* Clang Compiler for Windows
-* Windows 10 SDK (10.0.17134.0)
-* Windows 10 SDK (10.0.16299.0)
-* MSVC v141 - VS 2017 C++ x64/x86 build tools
-* MSVC v140 - VS 2015 C++ build tools (v14.00)
-
-This will install about 22GB of crap, but once that is done you can open up a command line in the project's directory and run `lime test windows -debug`. Once that command finishes (it takes forever even on a higher end PC), you can run FNF from the .exe file under export\release\windows\bin
+* MSVC v142 - VS 2019 C++ x64/x86 build tools(Latest)
+* Windows 10 SDK (10.0.19041.0)
+This will install about 1GB of crap, but once that is done you can open up a command line in the project's directory and run `lime test windows -debug`. Once that command finishes (it takes forever even on a higher end PC), you can run FNF from the .exe file under export\release\windows\bin
 As for Mac, 'lime test mac -debug' should work, if not the internet surely has a guide on how to compile Haxe stuff for Mac.
+
+Note: if you try to compile the game, it will give you an error of yvals.h can't open include file.     
+
+Also Note: Try Reseting the PC and use setup.bat to install the haxe libraries and Visual Community and fix other errors.
+
+Again Also Note: For Kade Engine, write haxelib install actuate. and extension webm for git                                          
 
 ### Additional guides
 
